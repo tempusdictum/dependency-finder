@@ -1,0 +1,16 @@
+apply plugin: "war"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "log4j:log4j:1.2.17"
+    compile "oro:oro:2.0.8"
+    compile "com.google.guava:guava:r08"
+    // compile "com.google.guava:guava:19.0"
+
+
+    compile "org.apache.ant:ant:1.9.4"
+    compile "opensymphony:webwork:2.2.4"
+}
