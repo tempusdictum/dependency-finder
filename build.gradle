@@ -10,5 +10,4 @@ dependencies {
     compile "com.google.guava:guava:19.0"
 
     compile "org.apache.ant:ant:1.9.4"
-    compile "opensymphony:webwork:2.2.4"
 }
