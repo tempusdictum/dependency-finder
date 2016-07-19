@@ -1,4 +1,4 @@
-.gradle/
+.gradle
 bin/ClassClassDiff
 bin/ClassClassDiff.bat
 bin/ClassCohesion
@@ -89,6 +89,7 @@ bin/f2f
 bin/f2f.bat
 bin/p2p
 bin/p2p.bat
+build
 classes
 dist
 docs/Developer.html
