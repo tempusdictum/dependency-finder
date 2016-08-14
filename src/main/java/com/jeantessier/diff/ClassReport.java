@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 2001-2009, Jean Tessier
+ *  Copyright (c) 2001-2016, Jean Tessier
  *  All rights reserved.
  *  
  *  Redistribution and use in source and binary forms, with or without
@@ -200,6 +200,18 @@ public class ClassReport extends Printer implements Comparable, com.jeantessier.
 
     public void visitUTF8_info(UTF8_info entry) {
         append(escapeXMLCharactersInAttributeValue(entry.getValue()));
+    }
+
+    public void visitMethodHandle_info(MethodHandle_info entry) {
+        // Do nothing
+    }
+
+    public void visitMethodType_info(MethodType_info entry) {
+        // Do nothing
+    }
+
+    public void visitInvokeDynamic_info(InvokeDynamic_info entry) {
+        // Do nothing
     }
 
     public void visitField_info(Field_info entry) {

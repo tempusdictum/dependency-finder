@@ -1,5 +1,5 @@
 /*
- *  Copyright (c) 2001-2009, Jean Tessier
+ *  Copyright (c) 2001-2016, Jean Tessier
  *  All rights reserved.
  *  
  *  Redistribution and use in source and binary forms, with or without
@@ -59,6 +59,8 @@ public class ConstantPool extends ArrayList<com.jeantessier.classreader.Constant
         for (int i=1; i<count; i++) {
             byte tag = in.readByte();
 
+            Logger.getLogger(getClass()).info("Entry " + i + " has tag " + tag);
+
             switch(tag) {
                 case ConstantPoolEntry.CONSTANT_Class:
                     add(new Class_info(this, in));
@@ -96,6 +98,15 @@ public class ConstantPool extends ArrayList<com.jeantessier.classreader.Constant
                     break;
                 case ConstantPoolEntry.CONSTANT_Utf8:
                     add(new UTF8_info(this, in));
+                    break;
+                case ConstantPoolEntry.CONSTANT_MethodHandle:
+                    add(new MethodHandle_info(this, in));
+                    break;
+                case ConstantPoolEntry.CONSTANT_MethodType:
+                    add(new MethodType_info(this, in));
+                    break;
+                case ConstantPoolEntry.CONSTANT_InvokeDynamic:
+                    add(new InvokeDynamic_info(this, in));
                     break;
                 default:
                     Logger.getLogger(getClass()).info("Unknown Tag " + tag);
