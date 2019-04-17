@@ -46,7 +46,7 @@ import java.util.List;
  *  criteria.  If there are no criteria, it matches all
  *  submetrics.  Each criterion is a boolean expression
  *  with measurement names, numbers, and boolean operators
- *  (<, <=, >, >=, ==, and !=).  If a submetric matches
+ *  (&lt;, &lt;=, &gt;, &gt;=, ==, and !=).  If a submetric matches
  *  any one of the expressions in the criteria, it is
  *  included in the count.
  *  

@@ -165,7 +165,7 @@ public class MetricsGatherer extends VisitorBase {
     }
 
     /**
-     *  PackageNode --> CurrentNode()
+     *  PackageNode --&gt; CurrentNode()
      */
     public void visitInboundPackageNode(PackageNode node) {
         if (getStrategy().isInFilter(node)) {
@@ -175,7 +175,7 @@ public class MetricsGatherer extends VisitorBase {
     }
 
     /**
-     *  CurrentNode() --> PackageNode
+     *  CurrentNode() --&gt; PackageNode
      */
     public void visitOutboundPackageNode(PackageNode node) {
         if (getStrategy().isInFilter(node)) {
@@ -195,7 +195,7 @@ public class MetricsGatherer extends VisitorBase {
     }
 
     /**
-     *  ClassNode --> CurrentNode()
+     *  ClassNode --&gt; CurrentNode()
      */
     public void visitInboundClassNode(ClassNode node) {
         if (getStrategy().isInFilter(node)) {
@@ -205,7 +205,7 @@ public class MetricsGatherer extends VisitorBase {
     }
 
     /**
-     *  CurrentNode() --> ClassNode
+     *  CurrentNode() --&gt; ClassNode
      */
     public void visitOutboundClassNode(ClassNode node) {
         if (getStrategy().isInFilter(node)) {
@@ -224,7 +224,7 @@ public class MetricsGatherer extends VisitorBase {
     }
 
     /**
-     *  FeatureNode --> CurrentNode()
+     *  FeatureNode --&gt; CurrentNode()
      */
     public void visitInboundFeatureNode(FeatureNode node) {
         if (getStrategy().isInFilter(node)) {
@@ -234,7 +234,7 @@ public class MetricsGatherer extends VisitorBase {
     }
 
     /**
-     *  CurrentNode() --> FeatureNode
+     *  CurrentNode() --&gt; FeatureNode
      */
     public void visitOutboundFeatureNode(FeatureNode node) {
         if (getStrategy().isInFilter(node)) {

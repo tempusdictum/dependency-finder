@@ -32,13 +32,10 @@
 
 package com.jeantessier.classreader;
 
-import org.apache.log4j.Logger;
+import java.io.*;
+import java.util.*;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.HashSet;
-import java.util.LinkedList;
+import org.apache.log4j.*;
 
 public abstract class ClassfileLoaderEventSource extends ClassfileLoader {
     public static final ClassfileLoaderDispatcher DEFAULT_DISPATCHER = new PermissiveDispatcher();
@@ -135,7 +132,7 @@ public abstract class ClassfileLoaderEventSource extends ClassfileLoader {
                     fireBeginClassfile(filename);
                     Classfile classfile = load(new DataInputStream(in));
                     fireEndClassfile(filename, classfile);
-                } catch (IOException ex) {
+                } catch (Exception ex) {
                     Logger.getLogger(getClass()).warn("Cannot load class from file \"" + filename + "\"", ex);
                 }
                 break;
