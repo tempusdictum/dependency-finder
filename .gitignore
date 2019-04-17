@@ -97,6 +97,8 @@ docs/Manual.html
 docs/Tools.html
 lib/DependencyFinder.jar
 
+.gradle
+build
 build.example.xml
 df.xml
 docs/api
