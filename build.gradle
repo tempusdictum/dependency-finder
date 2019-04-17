@@ -7,16 +7,16 @@ repositories {
 dependencies {
     compile "log4j:log4j:1.2.17"
     compile "oro:oro:2.0.8"
-    compile "com.google.guava:guava:19.0"
+    compile "com.google.guava:guava:27.1-jre"
 
-    compile "org.apache.ant:ant:1.9.4"
+    compile "org.apache.ant:ant:1.10.5"
 
     compile files(org.gradle.internal.jvm.Jvm.current().toolsJar)
 
     testCompile 'junit:junit:4.12'
-    testCompile 'org.jmock:jmock:2.8.2'
-    testCompile 'org.jmock:jmock-legacy:2.8.2'
-    testCompile 'org.jmock:jmock-junit3:2.8.2'
-    testCompile 'org.jmock:jmock-junit4:2.8.2'
-    testCompile 'org.httpunit:httpunit:1.7.2'
+    testCompile 'org.jmock:jmock:2.11.0'
+    testCompile 'org.jmock:jmock-legacy:2.11.0'
+    testCompile 'org.jmock:jmock-junit3:2.11.0'
+    testCompile 'org.jmock:jmock-junit4:2.11.0'
+    testCompile 'org.httpunit:httpunit:1.7.3'
 }
