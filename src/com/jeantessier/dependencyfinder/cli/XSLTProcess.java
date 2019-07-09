@@ -34,6 +34,6 @@ package com.jeantessier.dependencyfinder.cli;
 
 public class XSLTProcess {
     public static void main(String args[]) {
-        com.sun.org.apache.xalan.internal.xslt.Process._main(args);
+      org.apache.xalan.xslt.Process.main(args);
     }
 }

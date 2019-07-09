@@ -81,6 +81,7 @@
             <classpath>
                 <path refid="classpath.dependencyfinder"/>
                 <path refid="classpath.servlet"/>
+               <pathelement path="/usr/share/java/xalan2.jar"/>
             </classpath>
             <patternset refid="all.sources"/>
         </javac>
